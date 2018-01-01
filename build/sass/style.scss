@@ -1,0 +1,141 @@
+@import "core/vars";
+
+
+
+.site-header {
+  font-family: $font-family;
+  @media (max-width: 992px) {
+    font-size: 13px;
+  }
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+  .navbar-nav {
+    > li {
+      > a {
+        color: $white;
+        font-weight: bold;
+        &:hover,
+        &:focus,
+        &:active {
+          color: $white;
+          outline: none;
+        }
+      }
+    }
+  }
+  .navbar-brand {
+     color: $white;
+    font-weight: bold;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+      outline: none;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 14px;
+    }
+    @media (max-width: 768px) {
+      font-size: 13px;
+    }
+  }
+
+  .navbar-default {
+    background: $green;
+    border: 0 none;
+    .navbar-nav {
+      > .open {
+        > a {
+          &, &:hover, &:focus {
+            background: transparent;
+            color: $white;
+          }
+        }
+      }
+      @media (max-width: 767px) {
+        .menu-item-bar {
+          display: none;
+        }
+      }
+    }
+
+    .navbar-header {
+      position: relative;
+      padding-left: 35px;
+    }
+
+    .sidebar-toggle,
+    .navbar-toggle {
+      background: transparent;
+      border: 0 none;
+      box-shadow: none;
+      padding: 0;
+      .icon-bar {
+        background: $white;
+        height: 2px;
+        width: 22px;
+        border-radius: 1px;
+        display: block;
+        border: 0 none;
+
+        + .icon-bar {
+          margin-top: 4px;
+        }
+      }
+
+    }
+
+    .navbar-toggle {
+      margin-top: 18px;
+    }
+
+    .sidebar-toggle {
+      position: absolute;
+      left: 15px;
+      top: 18px;
+      @media (min-width: 768px) {
+        left: 0;
+      }
+    }
+  }
+
+}
+.menu-item-user a{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  @media (min-width: 1200px){
+    width: 540px;
+  }
+  @media (min-width: 992px) and (max-width: 1199px){
+    width: 350px;
+  }
+  @media (min-width: 768px) and (max-width: 991px){
+    width: 225px;
+  }
+  @media (min-width: 768px) {
+    text-align: right;
+  }
+}
+.menu-item-bar {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    left: 0;
+    top: 13px;
+    height: 25px;
+    background: $white;
+  }
+}
+
+.menu-item-logout {
+  span {
+    @media (min-width: 768px){
+      display: none;
+    }
+  }
+}
