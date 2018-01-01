@@ -62,6 +62,9 @@
         .menu-item-bar {
           display: none;
         }
+        .open .dropdown-menu > li > a {
+          color: $white;
+        }
       }
     }
 
