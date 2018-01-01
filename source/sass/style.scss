@@ -40,6 +40,10 @@
     @media (max-width: 768px) {
       font-size: 13px;
     }
+    @media (max-width: 767px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   .navbar-default {
@@ -137,5 +141,11 @@
     @media (min-width: 768px){
       display: none;
     }
+  }
+}
+
+.menu-item-dropdown {
+  img {
+    width: 20px;
   }
 }
